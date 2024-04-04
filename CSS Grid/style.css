@@ -1,80 +1,73 @@
-body {
-    display: grid;
-    width: 800px;
-    height: 350px;
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 1200px;
+    height: 600px;
     text-align: center;
-    border: 1px solid black;
     font-weight: bold;
+    font-size: 20px;
 }
-
-header {
+.header {
+    display: grid;
     width: 100%;
     height: 10%;
-    line-height: 2;
+    line-height: 3;
+    text-align: center;
     background-color: rgb(227, 227, 227);
 }
-main {
-    display: flex;
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     width: 100%;
-    height: 60%;
-    line-height: 3;
+    height: 70%;
     background-color: rgb(255, 248, 239);
 }
-
-.mainPart {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: space-between;
+.articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 1fr 1fr;
+    background-color: rgb(255, 248, 239);
 }
-
-.mainPart1 {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-
+.article_title {
+    display: grid;
+    grid-column: 1/4;
+    text-align: center;
+    line-height: 4;
 }
-div.mainPart1_1, div.mainPart1_2  {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: flex-end;
-    width: 46%;
-    height: 50px;
-    margin: 15px 15px 0px 15px ;
+.article {
+    display: grid;
+    margin: 15px 15px 10px 15px;
+    text-align: center;
+    line-height: 4;
     background-color: bisque;
 }
-
-.mainPart2 {
-    display: flex;
-    justify-content: space-around;
-    margin: 0px 15px 5px 15px ;
-    height: 50px;
-    background-color: bisque;
+.article:nth-child(4) {
+    grid-column: 1/4;
+    margin: 10px 15px 15px 15px;
 }
-
-.asidePart {
-    display: flex;
-    justify-content: center;
-    width: 35%;
-    line-height: 5;
-    background-color: rgb(236, 240, 240);
-}
-
-footer {
-    display: flex;
+.aside {
     width: 100%;
-    height: 30%;
-    justify-content: space-around;
-    margin: px;
+    height: 100%;
+    text-align: center;
+    line-height: 4;
+    background-color: rgb(224, 235, 228);
+}
+.footer {
+    height: 20%;
+}
+.sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
     background-color: rgb(227, 227, 227);
 }
-
-.F1, .F2, .F3, .F4 {
-    width: 175px;
-    height: 75px;
-    margin: 15px;
-    background-color: white;
-    line-height: 4.5;
+.section {
+    display: grid;
+    margin: 20px 15px 20px 15px;
+    text-align: center;
+    line-height: 4;
+    background-color: rgb(255, 253, 253);
 }
+
